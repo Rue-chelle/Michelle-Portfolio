@@ -3,36 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../scr/styles.css"/>
     <title>Document</title>
 </head>
 <style>
-    .poem-landing{
+   .poem-landing{
+    width: 80%;
+    margin: 0 auto;
     display: flex;
-    margin:0 auto;
-    align-items: center;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 20px 60px rgba(194, 15, 104, 0.08);
-
-    }
-    .image{
-    max-width: 80px;
-    border-radius: 10px;
+    justify-content: space-between;
+    
+ 
+}
+.image{
+    flex: 1;
+    display: block;
+    margin: 20px 0 0 20px ;
+    border: 5px solid rgb(163, 155, 155);
+    display: block;
     justify-content: flex-end;
 }
- .image img{
-    border: 1px solid rgba(0, 0, 0, 0.5);
-    display: block;
-    max-height: 90vh;
- }
-     .description{
+
+.description{
+    flex: 1;
+    padding: 60px;
+    margin: 0;
+   
+}
+.back{
+    font-size: 24px;
+    background-color: rgb(88, 85, 85);
+    font-weight: 400;
+    color: white;
+    position: relative;
+    text-decoration: none;
+     
+}
+.back::after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0%;
+        height: 3px;
+        background-color: rgb(17, 16, 16);
+        transition:  width 0.3s ease;
+        transform-origin: bottom left;
+    }
+    .back:hover::after{
+        width: 100%;
+    }
+    h1{
+    font-size: 90px;
+    }
+    .view-btn{
+        
+    text-decoration: none;
     margin-left: 10px;
-    display: flex;
-    
-     }
+    background-color: rgb(24, 22, 24);
+    color: white;
+    border: none;
+    width: 150px;
+    font-size: 16px;
+    border-radius: 4px;
+    padding: 14px 25px;
+
+    }
+
+
 </style>
 <body>
+        <a class="back" href="./pages/projects.html">Back to Projects</a><br>
+
   <div class="poem-landing">
     <div class="image">
     <img src="/scr/poem.png">
@@ -41,8 +82,12 @@
 
   </div>
   <div class="description">
-    <p>ufhhhhhhhhhhhhhhhhhhhhhhhhhhhyfvb  uuuuuuuuuuuuuuuuuuuuuuuuu
-       hjbfhjfgnhskiuhjcn j</p>
+    <p>ufhhhhhhhhhhhh
+        uygubfc <br>
+        hhhhhhhhhhhhhhhyfvb  uuuuuuuuuuuuuuuuuuuuuuuuu
+       hbr <br> jbfhjfgnhskiuhjcn j</p>
+
+       <a class="view-btn" href="https://alora-ai-poem-generator.netlify.app" target="_blank">View project</a>
    </div>
 </body>
 </html>

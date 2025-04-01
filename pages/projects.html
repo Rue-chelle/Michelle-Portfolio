@@ -14,6 +14,7 @@
     h1{
         font-size: 80px;
         color: white;
+        transition: color .4s ease .25s;
     }
     .projects{
      position: relative;
@@ -27,7 +28,7 @@
         display: block;
         width: 100%;
         height: 100%;
-        transition: transform 0.9s ease-in-out;
+        transition: transform 200ms ease-in-out;
      
     }
     .project-iterm:hover{
@@ -56,7 +57,23 @@
         color:white;
         font-size: 34px;
         font-weight: bold;
+        position: relative;
+        text-decoration: none;
     }
+    p::after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0%;
+        height: 3px;
+        background-color: white;
+        transition:  width 0.3s ease;
+        transform-origin: center;
+    }
+    p:hover::after{
+        width: 100%;
+    };
 
 </style>
 <body>
