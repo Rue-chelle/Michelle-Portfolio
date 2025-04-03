@@ -9,7 +9,7 @@ _It showcases my skills through listed projects and also gives details about my 
 _What to Expect:_
 
 * Summary about me
-*Projects
+* Projects 
 * education history
 * A downloadable Cv
 * list of programing languages
