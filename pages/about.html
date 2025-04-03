@@ -12,12 +12,14 @@
         <div class="container">
             <h2>Michelle Samuriwo</h2>
             <nav>
+                <label for="menu-toggle" class="menu-icon"> ☰</label>
+                <input type="checkbox" id="menu-toggle" />
                 <ul>
                     <li><a href="/home.html">Home</a></li>
-                    <li><a href="./pages/projects.html">Projects</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#education">Intellects</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
-                <div class="menu-icon">☰</div>
+            
             </nav>
         </div>
  </header>
@@ -35,12 +37,57 @@
         </div>
         </div>
     </section>
-    <section class="education">
+    <section class="education" id="education">
         <h1>
-            Intellects <img class=" edu-logo" src="/scr/graduate.png">
+            Intellects
         </h1>
-
+     <div class="schools">
+        <div class="school-iterm">
+            <h5> High School</h5>
+            <p>Graduated from high school in 2018 at New Model Private College in Johannesburg, South Africa with a bachelor Pass and distinctions according to the NSC criteria</p>
+        </div>
+        <div class="school-iterm">
+            <h5> PLP Academy</h5>
+            <p> Currently enrolled in the Software Development program. With modules such as Python, Database design and programming, Web Development, Startup Building and Ai Masterclass (to name a few) , I will graduate as a well equiped junior software developer.</p>
+        </div>
+        <div class="school-iterm">
+            <h5> SheCode</h5>
+            <p> Graduated from the program after doing several projects showcasing the knowledge gained and atained Introduction to Ai, Web Development and Advanced Web Development certificates</p>
+        </div>
+        
+        <div class="lang">
+            <a href="/scr/cv.pdf" download="cv.pdf" class="cv-btn"> Download CV</a>
+            <img src="/scr/html.png" width="40px" height="40px">
+           <img src="/scr/css-3.png" width="40px"  height="40px">
+           <img src="/scr/java-script.png" width="40px" height="40px">
+        </div>
+        
+    
 
     </section>
+    <section class="contact-section" id="contact">
+        <h2>Interested In Working With Me? </h2>
+    
+        <!-- Hiding contact form -->
+        <input type="checkbox" id="contact-toggle">
+         <label for="contact-toggle" class="contact-btn">Get In Touch</label>
+
+          <!-- Contact form initially hidden -->
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your message" required></textarea>
+            <button type="submit">Send Message</button>
+
+        </form>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/michelle-rufaro-samuriwo-74246a238" target="_blank"><img src="/scr/icons8-linkedin-50.png" width="40px" height="40px"></a>
+            <a href="https://www.facebook.com/profile.php?id=100069319608679" target="_blank"><img src="/scr/icons8-facebook-30.png" width="40px"  height="40px"></a>
+            <a href="https://github.com/Rue-chelle" target="_blank"><img src="/scr/git.png" width="40px" height="40px"></a>
+        </div>
+       
+
+
+       </section>
 </body>
 </html>
