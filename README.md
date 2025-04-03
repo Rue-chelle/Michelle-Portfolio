@@ -8,12 +8,12 @@ _It showcases my skills through listed projects and also gives details about my 
 
 _What to Expect:_
 
-> Summary about me
-> Projects
-> education history
-> A downloadable Cv
-> list of programing languages
-> a contact form
-> link to social media pages
+* Summary about me
+*Projects
+* education history
+* A downloadable Cv
+* list of programing languages
+* a contact form
+* link to social media pages
 
-_This portfolio was programmed using HTML and CSS only_
+#This portfolio was programmed using HTML and CSS only
