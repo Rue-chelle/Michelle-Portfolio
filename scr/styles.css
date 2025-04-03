@@ -527,7 +527,7 @@ h3:hover::after{
         padding: 8px 16px; /* Adjust button size for mobile */
         font-size: 14px;
     }
-}
+
 .menu-icon {
     display: block;
     cursor: pointer;
@@ -556,4 +556,5 @@ nav ul.show {
 nav ul li {
     margin: 10px 0; /* Add spacing between vertical menu items */
     text-align: center;
+}
 }
