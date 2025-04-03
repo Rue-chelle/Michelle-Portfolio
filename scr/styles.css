@@ -14,17 +14,23 @@ header{
     background-color: #ddd8d8;;
     padding: 0 5px;
     height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 h1{
     font-size: 90px;
     font-weight: bold;
     gap: 10px;
+    margin: 0;
     color: white;
     
 }
 h2{
     font-size: 30px;
+    margin: 20px 0;
 }
 .page-content p{
     font-size: 18px;
@@ -42,11 +48,13 @@ h2{
     width: 100%;
     margin:0 auto;
     justify-content: space-between;
+    align-items: center;
     
 }
 nav {
 display: flex;
 align-items: center;
+position: relative;
 
 }
 
@@ -72,7 +80,24 @@ nav ul li a{
     display: none;
     font-size: 24px;
     cursor: pointer;
+    color: white;
 }
+#menu-toggle {
+    display: none;
+}
+
+#menu-toggle:checked + ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* Adjust based on your navbar height */
+    right: 0;
+    background-color: #222;
+    width: 100%;
+    padding: 10px 0;
+}
+
+
 
 /* hero page */
 
@@ -81,9 +106,7 @@ nav ul li a{
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    padding: 0;
-    margin: 0;
-    /* margin-bottom: 30px; */
+    gap:20px;
     background-color: #dbc1d5;
     box-sizing: border-box;
    
@@ -97,8 +120,7 @@ p{
     margin-bottom: 30px;
     max-width: 50%;
     padding: 20px;
-    justify-content: center;
-   
+    
 }
 .buttons{
     display: flex;
@@ -128,7 +150,7 @@ p{
 }
 .page-image img{
     margin: 0 auto;
-    border: 1px solid rgba(0, 0, 0, 0.5);
+    border: 10px solid #ddd8d8;
     display: block;
     position: relative;
     z-index: 2;
@@ -139,15 +161,16 @@ p{
 /* projects cards */
 .projects{
     text-align: center;
-    padding: 60px 20px;
+    padding: 20px 20px;
     background: #ddd8d8;
 
 }
 .projects h2{
-    font-size: 2em;
-    color: #d8b4e2;
+    font-size: 60px;
+    color: white;
     margin-bottom: 25px;
     font-weight: bold;
+  
 
 }
 .project-cards{
@@ -196,7 +219,23 @@ p{
     font-size: 1.4em;
     color: #222;
     margin-bottom: 8px;
+    text-decoration: none;
+    position: relative;
 }
+h3::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color: #222;
+    transition:  width 0.3s ease;
+    transform-origin: center;
+}
+h3:hover::after{
+    width: 100%;
+};
 .demo-btns{
     display: flex;
     align-items: center;
@@ -270,8 +309,12 @@ p{
     cursor: pointer;
     transition:  0.3s ease-in-out;
 }
+.contact-form button{
+    padding: 8px;
+    border: none;
+}
 .contact-form button:hover{
-    background-color: #222;
+    background-color: #d8b4e2;
 }
 /* Show contact form */
 
@@ -281,6 +324,9 @@ p{
     flex-direction: column;
     gap: 15px;
 }
+
+/* About me page */
+ 
 /* Social icons */
 .social-icons{
     display: flex;
@@ -302,6 +348,67 @@ p{
     transform: scale(1.1);
 }
 
+/* school */
+.education{
+    background-color: #ddd8d8;
+   
+}
+
+.schools{
+    position: relative;
+    margin: 50px  auto;
+    max-width: 60%;
+    border-radius: 10px;
+   
+}
+
+.school-iterm{
+    font-size: 16px;
+    background-color: #d8b4e2;
+    padding: 20px;
+    border-left: 3px solid rgb(238, 129, 238);
+    line-height: 2;
+    margin-bottom: 28px;
+    transition: transform 200ms ease-in-out;
+    cursor: pointer;
+    box-shadow: 0px 4px 30px rgba(39,33,66,0.03);  
+}
+.school-iterm:hover{
+    transform: scale(1.1);
+}
+.lang{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 50px;
+   
+}
+.lang img{
+   display: inline-block;
+   width: 35px;
+   height: 35px;
+   text-align: center;
+   line-height: 1.5;
+   color: white;
+   font-size: 18px;
+}
+
+.cv-btn{
+    display: inline-block;
+    margin-left: 50px;
+    padding: 10px 20px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #222;
+    background-color: #d8b4e2;
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+.cv-btn:hover{
+    background-color: #ccc;
+}
+
+
 /* Fade in animation */
 @keyframes fadeIn {
     from {
@@ -310,4 +417,143 @@ p{
     to{
         opacity: 1;
     }
+}
+
+
+@media (max-width: 768px) {
+
+
+    .page {
+        flex-direction: column; /* Stack image and content vertically */
+        align-items: center;
+        text-align: center;
+      
+    }
+    .container{
+        flex-direction: column; /* Stack image and content vertically */
+        align-items: center;
+        text-align: center;
+      
+    }
+    .buttons{
+        justify-content: center;
+    }
+
+    .page-image img {
+        max-width: 300px; /* Reduce image size for tablets */
+    }
+
+    .page-content h1 {
+        font-size: 40px; /* Adjust heading size */
+    }
+
+    .page-content p {
+        font-size: 16px; /* Adjust paragraph size */
+    }
+    h1 {
+        font-size: 60px; /* Reduce font size for tablets */
+    }
+
+    h2 {
+        font-size: 24px; /* Adjust subtitle font size */
+    }
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        font-size: 1.5rem;
+        color: rgb(3, 3, 3);
+    }
+    #menu-toggle:checked + ul {
+        display: flex;
+    }
+
+    nav ul {
+        display: none; /* Hide the menu by default */
+        flex-direction: column; /* Stack menu items vertically */
+        background-color: #222; /* Add a background for the dropdown */
+        position: absolute;
+        top: 100%; /* Adjust based on your navbar height */
+        right: 0;
+        text-align: center;
+        width: 100%; /* Full width dropdown */
+        padding: 10px 0;
+    }
+    nav ul.show {
+        display: flex; /* Show the menu when toggled */
+    }
+   
+    nav ul li {
+        margin: 10px 0; /* Add spacing between vertical menu items */
+        text-align: center;
+    }
+  /* Show the menu when the checkbox is checked */
+
+
+
+/* contact form */
+.contact-form {
+    padding: 10px;
+    gap: 10px;
+}
+
+.contact-form textarea {
+    height: 80px;
+}
+
+.contact-btn {
+    font-size: 0.9em;
+    padding: 8px;
+}
+
+.contact-form button {
+    padding: 6px;
+    font-size: 0.9em;
+}
+}
+@media (max-width: 480px) {
+    .page-content h1 {
+        font-size: 30px; /* Further reduce heading size for mobile */
+    }
+
+    .page-content p {
+        font-size: 14px; /* Adjust paragraph size for mobile */
+    }
+
+    .page-image img {
+        max-width: 250px; /* Further reduce image size for mobile */
+    }
+
+    .buttons .about-me-btn {
+        padding: 8px 16px; /* Adjust button size for mobile */
+        font-size: 14px;
+    }
+}
+.menu-icon {
+    display: block;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: rgb(3, 3, 3);
+}
+#menu-toggle:checked + ul {
+    display: flex;
+}
+
+nav ul {
+    display: none; /* Hide the menu by default */
+    flex-direction: column; /* Stack menu items vertically */
+    background-color: #222; /* Add a background for the dropdown */
+    position: absolute;
+    top: 100%; /* Adjust based on your navbar height */
+    right: 0;
+    text-align: center;
+    width: 100%; /* Full width dropdown */
+    padding: 10px 0;
+}
+nav ul.show {
+    display: flex; /* Show the menu when toggled */
+}
+
+nav ul li {
+    margin: 10px 0; /* Add spacing between vertical menu items */
+    text-align: center;
 }
