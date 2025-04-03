@@ -16,4 +16,7 @@ _What to Expect:_
 * a contact form
 * link to social media pages
 
-#This portfolio was programmed using HTML and CSS only
+This portfolio was programmed using HTML and CSS only
+
+Link to the portfolio: https://michellesamuriwo.netlify.app
+
