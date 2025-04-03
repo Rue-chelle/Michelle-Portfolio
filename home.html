@@ -13,12 +13,14 @@
          <div class="container">
              <h2>Michelle Samuriwo</h2>
              <nav>
+                <label for="menu-toggle" class="menu-icon"> ☰</label>
+                <input type="checkbox" id="menu-toggle" />
                  <ul>
                      <li><a href="./pages/about.html">About Me</a></li>
-                     <li><a href="./pages/projects.html">Projects</a></li>
-                     <li><a href="#">Contact</a></li>
+                     <li><a href="#projects">Projects</a></li>
+                     <li><a href="#contact">Contact</a></li>
                  </ul>
-                 <div class="menu-icon">☰</div>
+                 
              </nav>
          </div>
         </header>
@@ -41,28 +43,28 @@
             </div>
            </section>
 
-           <section class="projects">
-            <h2>The treasure chest</h2>
+           <section class="projects" id="projects">
+            <h2>Oeuvres</h2>
             <div class="project-cards">
 
                 <div class="card">
                    <h3> Alora Poem Generator</h3>
-                    <img src="/scr/poem.png" alt="poem image" class="poem">
+                    <a href="/scr/poem.png"><img src="/scr/poem.png" alt="poem image" class="poem"></a>
                     <h4>Overview</h4>
                     <p>This desktop web app generates short poems using Ai with a romantic touch.<br> I created to implement my knowledge on Ai prompt engineering combined with HTML,CSS and JS</p>
                     <a class="demo" href="https://alora-ai-poem-generator.netlify.app/" target="_blank">Live View</a>
                 </div>
-                <div class="card"><h3> Alora Poem Generator</h3>
-                    <img src="/scr/poem.png" alt="poem image" class="poem">
+                <div class="card"><h3> Vanilla JS Weather App</h3>
+                    <a href="/scr/weather.jpg"><img src="/scr/weather.jpg" alt="poem image" class="poem"></a>
                     <h4>Overview</h4>
-                    <p>This desktop web app generates short poems using Ai with a romantic touch.<br> I created to implement my knowledge on Ai prompt engineering combined with HTML,CSS and JS</p>
-                    <a class="demo" href="https://alora-ai-poem-generator.netlify.app/" target="_blank">Live View</a>
+                    <p>This is a weather app that shows real time weather for any given city.<br> Programmed using Vanilla JS, css and HTML and the weather API fetches the real time data</p>
+                    <a class="demo" href="https://alora-weather-app.netlify.app/" target="_blank">Live View</a>
                 </div>
-                <div class="card"><h3> Alora Poem Generator</h3>
-                    <img src="/scr/poem.png" alt="poem image" class="poem">
+                <div class="card"><h3> Alora World clock</h3>
+                   <a href="/scr/clock.png"> <img src="/scr/clock.png" alt="poem image" class="poem"></a>
                     <h4>Overview</h4>
-                    <p>This desktop web app generates short poems using Ai with a romantic touch.<br> I created to implement my knowledge on Ai prompt engineering combined with HTML,CSS and JS</p>
-                    <a class="demo" href="https://alora-ai-poem-generator.netlify.app/" target="_blank">Live View</a>
+                    <p>This world clock shows real live time of different cities in different timezones.<br> The UI functionality of the App displays some of my web dev skills of Html, css and JS</p>
+                    <a class="demo" href="https://alora-world-clock.netlify.app/" target="_blank">Live View</a>
                     </a>
                     </div>
             </div>
@@ -70,7 +72,7 @@
            </section>
            
 
-           <section class="contact-section">
+           <section class="contact-section" id="contact">
             <h2>Interested In Working With Me? </h2>
         
             <!-- Hiding contact form -->
@@ -86,10 +88,16 @@
 
             </form>
             <div class="social-icons">
-                <a href="#" target="_blank"><img src="/scr/icons8-linkedin-50.png" width="40px" height="40px"></a>
-                <a href="#" target="_blank"><img src="/scr/icons8-facebook-30.png" width="40px"  height="40px"></a>
-                <a href="#" target="_blank"><img src="/scr/git.png" width="40px" height="40px"></a>
+                <a href="https://www.linkedin.com/in/michelle-rufaro-samuriwo-74246a238" target="_blank"><img src="/scr/icons8-linkedin-50.png" width="40px" height="40px"></a>
+                <a href="https://www.facebook.com/profile.php?id=100069319608679" target="_blank"><img src="/scr/icons8-facebook-30.png" width="40px"  height="40px"></a>
+                <a href="https://github.com/Rue-chelle" target="_blank"><img src="/scr/git.png" width="40px" height="40px"></a>
             </div>
+           
+
+
+           </section>
+</body>
+</html>
            
 
 
